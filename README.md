@@ -1,82 +1,82 @@
 # GameList
 [![Licença](https://img.shields.io/github/license/Rodsducarmo/GameList)](https://github.com/Rodsducarmo/GameList/blob/main/LICENSE)
 
-# Sobre o projeto
-GameList é uma aplicação backend desenvolvida em Java com o framework Spring Boot. O objetivo deste projeto é demonstrar a implementação de uma aplicação web com alguns dos conceitos e necessidades mais comuns do desenvolvimento backend.
+## About the Project
+GameList is a backend application developed in Java with the Spring Boot framework. The goal of this project is to demonstrate the implementation of a web application with some of the most common concepts and needs in backend development.
 
-## Modelagem de Dados
+### Data Modeling
 
-Abaixo estão os diagramas de modelagem de dados do projeto:
+Below are the data modeling diagrams for the project:
 
-- Modelo de Domínio:
+- Domain Model:
 
-![Modelo de Domínio](https://github.com/Rodsducarmo/GameList/blob/main/Domain.png)
-
-
-- Modelo de Objetos:
-
-![Modelo de Objetos](https://github.com/Rodsducarmo/GameList/blob/main/Object.png)
+![Domain Model](https://github.com/Rodsducarmo/GameList/blob/main/Domain.png)
 
 
-- Modelo Relacional:
+- Object Model:
 
-![Modelo Relacional](https://github.com/Rodsducarmo/GameList/blob/main/Relational.png)
+![Object Model](https://github.com/Rodsducarmo/GameList/blob/main/Object.png)
 
 
-Você pode encontrar as imagens completas dos diagramas na pasta [imgs](https://github.com/Rodsducarmo/imgs) deste repositório.
+- Relational Model:
 
-## Funcionalidades
+![Relational Model](https://github.com/Rodsducarmo/GameList/blob/main/Relational.png)
 
-- Sistemas web e recursos
-- Cliente/servidor, HTTP, JSON
-- Padrão REST para API web
-- Estruturação de projeto Spring Rest
-- Entidades e ORM
+
+You can find the complete images of the diagrams in the [imgs](https://github.com/Rodsducarmo/imgs) folder of this repository.
+
+### Features
+
+- Web systems and resources
+- Client/server, HTTP, JSON
+- REST pattern for web APIs
+- Spring REST project structure
+- Entities and ORM
 - Database seeding
-- Padrão de camadas: Controller, Service, Repository
-- Padrão DTO para transferência de dados
-- Relacionamentos N-N com classe de associação e embedded id
-- Consultas SQL no Spring Data JPA com Projections
+- Layered architecture: Controller, Service, Repository
+- DTO pattern for data transfer
+- N-N relationships with association class and embedded ID
+- SQL queries with Spring Data JPA and Projections
 
-## Perfis de projeto
+### Project Profiles
 
-O projeto conta com diferentes perfis para se adaptar a diferentes ambientes:
+The project has different profiles to adapt to different environments:
 
-- Perfil de desenvolvimento e testes:
+- Development and testing profile:
   - `test`
-  - Banco de dados H2
+  - H2 database
 
-- Perfil de homologação / staging:
+- Staging profile:
   - `dev`
-  - Banco de dados Postgres de homologação
+  - Homologation PostgreSQL database
 
-- Perfil de produção:
+- Production profile:
   - `prod`
-  - Banco de dados Postgres de produção
-  - O projeto está disponibilizado na nuvem no seguinte endereço: [https://gamelists.up.railway.app](https://gamelists.up.railway.app)
-  - Você pode obter os dados da API fazendo uma requisição GET para o seguinte endpoint: `/games`
-  - Você pode obter as listas de jogos fazendo uma requisição GET para o seguinte endpoint: `/lists`
+  - Production PostgreSQL database
+  - The project is deployed in the cloud at the following address: [https://gamelists.up.railway.app](https://gamelists.up.railway.app)
+  - You can retrieve the API data by making a GET request to the following endpoint: `/games`
+  - You can retrieve the game lists by making a GET request to the following endpoint: `/lists`
 
-## Configuração do ambiente
+### Environment Configuration
 
-- É possível utilizar o Docker Compose para configurar o ambiente local facilmente.
-- O processo de homologação local é suportado para testar a aplicação antes de fazer o deploy.
-- Recomenda-se a configuração de um processo de CI/CD (Integração Contínua/Implantação Contínua) para automatizar o deploy do aplicativo.
+- You can use Docker Compose to easily configure the local environment.
+- Local homologation process is supported to test the application before deployment.
+- It is recommended to set up a CI/CD (Continuous Integration/Continuous Deployment) process to automate the application deployment.
 
-## Configuração do CORS
+### CORS Configuration
 
-A aplicação possui configurações CORS para permitir o acesso a partir de diferentes origens, garantindo a segurança e a interoperabilidade adequadas.
+The application has CORS (Cross-Origin Resource Sharing) configurations to allow access from different origins, ensuring proper security and interoperability.
 
-## Como executar o projeto
+### How to Run the Project
 
-1. Clone o repositório para o seu ambiente local.
-2. Configure o ambiente conforme necessário (Docker, perfis de projeto, banco de dados).
-3. Execute o projeto utilizando a IDE de sua preferência ou através da linha de comando com o comando `mvn spring-boot:run`.
-4. Acesse a API em `http://localhost:8080` ou no endereço fornecido pela sua configuração.
+1. Clone the repository to your local environment.
+2. Configure the environment as needed (Docker, project profiles, database).
+3. Run the project using your preferred IDE or through the command line with the `mvn spring-boot:run` command.
+4. Access the API at `http://localhost:8080` or the address provided by your configuration.
 
-Fique à vontade para explorar e contribuir com este projeto. Se tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato.
+Feel free to explore and contribute to this project. If you have any questions or suggestions, please feel free to get in touch.
 
-# Autor
+# Author
 
 Rodrigo Carmo da Costa
 
