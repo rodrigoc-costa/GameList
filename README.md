@@ -23,8 +23,6 @@ Below are the data modeling diagrams for the project:
 ![Relational Model](https://github.com/Rodsducarmo/GameList/blob/main/Relational.png)
 
 
-You can find the complete images of the diagrams in the [imgs](https://github.com/Rodsducarmo/imgs) folder of this repository.
-
 ### Features
 
 - Web systems and resources
